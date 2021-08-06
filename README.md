@@ -1,47 +1,6 @@
-# Svelte template
-
-- **Svelte**
-- **Vite**
-- **TypeScript**
-- **`svelte-preprocess` support** with Sass installed by default
-- **Hot module replacement**
-- **Prettier**
-
-Limitations:
-
-- Source maps of `.svelte` files don't support CSS preprocessors ([vite#649](https://github.com/vitejs/vite/issues/649)) and Pug
-- Linting for code-quality rules is not supported. Would need to use ESLint with eslint-plugin-svelte3, but that plugin needs to work with svelte-preprocess ([eslint-plugin-svelte3#10](https://github.com/sveltejs/eslint-plugin-svelte3/issues/10))
-
-## Recommended VSCode extensions
-
-- `svelte.svelte-vscode` for Svelte
-- `syler.sass-indented` for Sass
-- `esbenp.prettier-vscode` for Prettier
-
-## Setup
-
-`src/main.ts` is built and bundled into `build/bundle/`.
-
-If you want to add support for Android/iOS/Electron using Capacitor, read [Adding Capacitor to an existing web app](https://capacitorjs.com/docs/getting-started#adding-capacitor-to-an-existing-web-app). Just make sure to set webDir to `"build"` in `capacitor.config.json`.
-
-## Commands
-
-Start dev server:
-```
-npm run dev
-```
-
-Build and bundle:
-```
-npm run build
-```
-
-Lint the project:
-```
-npm run lint
-```
-
-Run `svelte-check`:
-```
-npm run check
-```
+1. `npx degit probablykasper/svelte-vite-context-module-exports-bug svelte-vite-context-module-exports-bug`
+2. `cd svelte-vite-context-module-exports-bug && npm i`
+3. `npm run dev`
+4. Open the website and check that the `Show` and `Hide` buttons work
+5. Trigger HMR in `Counter.svelte`, for example by changing the `<h3>` tag
+6. Now the `Show` and `Hide` buttons are broken
